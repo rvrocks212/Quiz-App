@@ -1,0 +1,50 @@
+@import url(https://db.onlinewebfonts.com/c/0d2fc67532a7c000fa3b6d66f0a70103?family=Monorama);
+.login-container{
+    font-family: "Monorama";
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid ;
+    padding: 80px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.start{
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    Margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: "Monorama";
+    font-size: 20px;
+}
+
+h2{
+    font-size: 45px;
+}
+
+input{
+    font-family: "Monorama";
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+}
+
+.avatar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+

@@ -1,0 +1,238 @@
+@import url(https://db.onlinewebfonts.com/c/0d2fc67532a7c000fa3b6d66f0a70103?family=Monorama);
+.quiz-container {
+    width: 600px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    border: 2px solid ;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    min-height: 500px;
+}
+
+/* Progress bar */
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: blueviolet;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Question styling */
+.question-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Options buttons */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.option-button {
+    padding: 12px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s ease-in-out;
+    font-size: 16px;
+}
+
+.option-button:hover {
+    background-color: #dcdcdc;
+}
+
+.option-button.selected {
+    border: 2px solid blueviolet;
+}
+
+/* Next button */
+.next-button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    font-family: "Monorama";
+}
+
+.next-button:hover {
+    background-color: rgb(90, 28, 148);
+}
+
+/* Results styling */
+.results-container {
+    font-family: "Monorama";
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 90vw;
+    padding: 0px;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 90vh ; /* Ensure full height */
+}
+
+.summary{
+    width: 100%;
+    height: 300px;
+    overflow-y: scroll;
+    font-family: Arial, sans-serif;
+    scrollbar-width: 0;
+}
+
+.summary::-webkit-scrollbar {
+    display: none;
+  }
+
+.complete{
+    margin: 10px;
+    width: 50%;
+    height: 100%;
+    border-right:2px solid ;
+}
+
+/* Ensure summary list is properly displayed */
+.summary-list {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Ensure no unwanted margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between items */
+}
+
+/* Ensure each summary item is fully visible */
+.summary-item {
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 90%;
+    word-wrap: break-word;
+    display: block; /* Ensure it does not collapse */
+}
+
+/* Correct and incorrect answer styles */
+.correct {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* Ensure selected and correct answer text is visible */
+.selected, .correct-answer {
+    font-weight: bold;
+    display: block; /* Ensure visibility */
+    margin-top: 5px;
+}
+
+
+.restart-button {
+    padding: 10px 20px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+    font-family: "Monorama";
+}
+
+.restart-button:hover {
+    background-color: #cc4c39;
+}
+
+.leaders{
+    font-family: "Monorama";
+    width: 50%;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding: 10px;
+}
+
+.leaderboard {
+    align-items: center;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.leaderboard::-webkit-scrollbar {
+    display: none;
+  }
+
+thead{
+    background-color: blueviolet;
+    color: white;
+}
+
+td{
+    border: 2px solid;
+}
+
+.app-name{
+    font-family: "Monorama";
+    font-size: 30px;
+    margin: 0px;
+    margin-left: -13%;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+    font-family: "Monorama";
+    gap: 20px;
+    padding-top: 60px;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    padding: 5px;
+}
+
+.question-no{
+    font-family: "Monorama";
+    margin: 0;
+    font-size: 100px;
+}
+
+.top-part{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.card{
+    padding-top: 100px;
+}
